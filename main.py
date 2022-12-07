@@ -33,7 +33,7 @@ class Product():
             except:
                 product_is_expired = False
             product_link = str(soup.find("a", class_="re_track_btn btn_offer_block")).split('"')[3]
-            print (f"{rep})Name:{product_name}\nRelease date:{product_date_time_post}\nIs expired:{product_is_expired}\nLink:{product_link}")
+            print (f"{rep})Name:{product_name}\nRelease date:{product_date_time_post}\nIs expired:{product_is_expired}\nLink:{product_link}\n")
 
     def run(self):
         if __name__ == "__main__":
